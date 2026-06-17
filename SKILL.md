@@ -1,11 +1,15 @@
 ---
 name: claude-mem
 description: Claude Code 跨会话持久化记忆插件，自动捕获工具使用观察、生成语义摘要并在未来会话中注入相关上下文，让 Claude 真正"记住"你的项目历史
-version: 0.1.0
+version: 0.1.1
 metadata:
-  openclaw_requires: ">=1.0.0"
-  emoji: 🧠
-  homepage: https://claude-mem.ai
+  openclaw:
+    requires:
+      bins:
+        - node
+        - npx
+    emoji: 🧠
+    homepage: https://claude-mem.ai
 ---
 
 # claude-mem — Claude Code 持久化记忆系统
@@ -108,3 +112,4 @@ ls ~/.claude/plugins/marketplaces/thedotmack/plugin/modes/
 - 文档：https://docs.claude-mem.ai
 - Web UI：http://localhost:37777（安装后本地访问）
 - Discord：https://discord.com/invite/J4wttp9vDu
+
